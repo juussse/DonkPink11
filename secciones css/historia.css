@@ -1,0 +1,163 @@
+#historia{
+  position: relative;
+  top: 0px;
+  width: 100vw;
+  height: 0vh;
+  z-index: 10;
+}
+.der img{
+  position: fixed;
+  width: 35vw;
+  border-radius: 20px;
+  
+  top: calc(50%);
+  left: calc(93%);
+  opacity: 1;
+  
+  transform: translateY(-100000%) translateX(-200%);
+}
+
+.izq h3{
+  font-size: 3vw;
+  font-family: 'Oswald', sans-serif;
+  margin-bottom: 0;
+}
+.izq p{
+  font-size: calc(0.8vw + 2.2vh);
+  margin-top: 0;
+}
+.izq { 
+  position: fixed;
+  width: 40vw;
+  height: 100vh;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  left: 5vw;
+
+  pointer-events: none;
+  
+  opacity: 0;
+  
+  text-align: justify;
+}
+
+.boton{
+  width: fit-content;
+  padding: 10px;
+  color: white;
+  background-color: black;/* Primero, establecemos un borde transparente */
+  background-clip: padding-box;
+  border-image: linear-gradient(to right, #000000, #000000) 1;
+  transition: 250ms;
+  cursor: pointer;
+  font-size: calc(1vw + 1.4vh);
+}
+
+.boton:hover{
+  border-image: linear-gradient(to right, #ff00ff, #e80390) 1; 
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes fadeOutAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10%);
+    
+  }
+}
+
+
+@media (max-width: 1019px) {
+  #historia{
+    position: relative;
+    height: fit-content;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .der{
+    position: relative;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .der img{
+    position: relative;
+    opacity: 1;
+    transform: translate(0, 0);
+    left: 0;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    border-radius: 0;
+    width: 100vw;
+    margin: 10px;
+  }
+  .izq {
+    position: relative;
+    width: 70vw;
+    height: fit-content;
+    left: 0;
+    margin: 0px;
+    padding: 0px;
+    top: 0;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .secHis{
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    left: 0;
+    height: fit-content;
+    margin-top: 0px;
+    /* margin: 30px; */
+      background-color: white;
+  }
+  .izq p{
+    font-size: calc(1.5vw + 1.6vh);
+  }
+  .izq h3{
+    text-align: center;
+    font-size: calc(2.5vw + 3vh);
+  }
+}
+
+@media (max-width: 760px) {
+  
+  .izq p{
+    font-size: calc(1.5vw + 1.6vh);
+  }
+  .izq h3{
+    text-align: center;
+    font-size: calc(2.5vw + 3vh);
+  }
+  .boton{
+    font-size: calc(1.4vw + 1.4vh);
+    text-align: center;
+  }
+}

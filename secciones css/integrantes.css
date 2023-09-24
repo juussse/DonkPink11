@@ -1,0 +1,107 @@
+
+.integrantes{
+    position: relative;
+
+    transform-style: preserve-3d;
+    perspective: 700px;
+
+    width: 100vw;
+    height:80vh;
+
+    
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px 0;
+
+    overflow: hidden;
+
+    z-index: 20;
+}
+
+.fc{
+    margin-top: 100vh;
+}
+
+
+
+.tarjeta{
+
+    transition: 500ms;
+
+    
+    
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    border-radius: 20px;
+    text-align: justify;
+    padding: 20px;
+
+    max-width: 250px;
+    min-width: 220px;
+
+    /* border: 1px rgb(236, 236, 236) solid; */
+
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); 
+
+    /* transform: translateX(-50%); */
+}
+.tarjeta .foto{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    
+    
+    border-radius: 100%;
+    
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    
+    width: 10vw;
+    height: 10vw;
+
+    min-width: 150px;
+    min-height: 150px;
+    background-image: url(../imagenes/chipichipi.png);
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+.tarjeta h3{
+    color: #b40099;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.tarjeta h2{
+    margin-top: 10px;
+}
+.tarjeta::before {
+    content: "";
+    position: absolute;
+
+    
+    top: 0;
+    right: 0;
+    width: 100%; /* Ancho del triángulo (aproximadamente la mitad del div) */
+    height: 100%; /* Altura del triángulo (aproximadamente la mitad del div) */
+    background-image: linear-gradient(to bottom right, #b40099, #ffd2f4, #ffffff);
+    clip-path: polygon(0 0, 0 59%, 130% 0);
+}
+
+@media (max-width: 1019px) {
+    #integrantes{
+        margin-top: 20vh;
+    }
+}

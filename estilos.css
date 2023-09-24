@@ -1,0 +1,398 @@
+*{
+    overflow-x: hidden;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Open Sans', sans-serif;  
+}
+
+#portada{
+    overflow: visible;
+    
+    position: absolute;
+    display: flex;
+    
+    /* pointer-events: none; */
+    
+    justify-content: center;
+    align-items: center;
+    
+    top: -15%;
+    left: 0;
+    
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 60;
+    
+    
+    
+    transition: 100ms;
+}
+#portada .cont{
+    overflow: visible;
+    transform-style: preserve-3d;
+    position: absolute;
+    display: flex;
+
+    /* pointer-events: none; */
+
+    justify-content: center;
+    align-items: center;
+
+    width: 60vw;
+    height: 60vw;
+
+    max-width: 300px;
+    max-height: 300px;
+
+    perspective: 500px;
+
+    transition: 100ms;
+}
+#portada img{
+    transform-style: preserve-3d;
+    position: absolute;
+    width: 60vw;
+    height: 60vw;
+
+    pointer-events: none;
+    
+    display: flex;
+    
+    max-width: 300px;
+    max-height: 300px;
+}
+#portada h2{
+    transform-style: preserve-3d;
+    position: relative;
+    margin: 0px 13px;
+    color: white;
+    transform: translate(-5%, 23%) translateZ(70px);
+    
+    
+    
+    font-size: 1.7rem;
+    
+    z-index: 2;
+    
+    font-family: 'Tektur', cursive;
+}
+
+.cabecera {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    max-height: 80px;
+    background-color: black;
+    opacity: 1;
+    color: white;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+    font-size: 0.7rem;
+
+    
+    font-family: 'Russo One', sans-serif;
+}
+
+.cabecera.transparente {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.cabecera.dia {
+    background-color: rgba(255, 255, 255, 1);
+    color: black;
+}
+
+
+
+.boton-hamburguesa {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 24px;
+    position: absolute;
+    right: 50px;
+}
+
+.boton-hamburguesa span {
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 4px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+.cabecera.abierto .boton-hamburguesa span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.cabecera.abierto .boton-hamburguesa span:nth-child(2) {
+    opacity: 0;
+}
+
+.cabecera.abierto .boton-hamburguesa span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.cabecera.dia span{
+    background-color: black;
+}
+
+
+.menu-lateral {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    max-width: 320px;
+    min-width: 200px;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-320px);
+    transition: transform 0.3s ;
+    font-size: 1rem;
+    /* z-index: 1; */
+}
+
+.menu-lateral h1{
+    font-family: 'Russo One', sans-serif;
+    padding: 0;
+    margin: 10px 20px;
+    opacity: 0;
+    transition: 300ms;
+}
+
+.menu-lateral ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral ul li {
+    padding: 10px;
+    margin: 0px 6px;
+    transition: 200ms;
+}
+
+.menu-lateral ul li.active {
+    background: #77577b;
+    border-radius: 7px;
+    
+    
+    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+    
+}
+
+.menu-lateral ul li.active > a{
+    color: white;
+}
+
+
+.menu-lateral ul li.active > a:hover{
+    color: #f7c0ff;
+}
+
+.menu-lateral ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    transition: 200ms ease-in-out;
+}
+
+
+.menu-lateral {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+.menu-lateral ul li a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.logo {
+    /* margin-right: 0px; */
+    width: 1.9vw;
+    height: 1.9vw;
+    min-width: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    
+    /* background-color: gray; */
+    color: rgb(185, 185, 185);
+    /* border: 2px black solid; */
+    
+    border-radius: 4px;
+    
+    margin-right: 6px;
+    
+    justify-content: center;
+}
+.logo i{
+    font-size: 1rem;
+    padding: 1px;
+}
+
+.menu-lateral .seccion{
+    color: rgb(142, 142, 142);
+}
+
+hr{
+    border: none;
+    height: 1px;
+    margin: 0 7px;
+    background-color: rgb(224, 224, 224);
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+    z-index: -1;
+    
+}
+
+#video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+
+.menu-lateral ul li.active > a div i{
+    color: white;
+}
+
+
+#cortina{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    pointer-events: none;
+    opacity: 0;
+    transition: 200ms;
+    z-index: 998;
+}
+#cortina.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    pointer-events:all;
+    opacity: 0.4;
+}
+
+
+
+
+#misVis{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: top;
+    align-items: center;
+    padding-top: 65vh;
+    background: transparent;
+    /* pointer-events: none; */
+}
+#tituloMis{
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgba(0, 0, 0, 0.35); */
+    border-radius: 10px;
+    /* -webkit-text-stroke: #000 1px; */
+    height: fit-content;
+    overflow: hidden;
+}
+
+#conmut{
+    cursor: pointer;
+    position: relative;
+    height: fit-content;
+    top: 0px;
+    transition: 800ms;
+    color: pink;
+}
+
+#tituloMis h2{
+    font-size: 2.4rem;
+    
+}
+
+.el{
+    overflow: hidden;
+    margin: 0px 5px;
+    color: white;
+}
+#textoMS{
+    width: 90vw;
+    height: fit-content;
+    
+    color: white;
+    max-width: 650px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight:bolder;
+    /* background-color: rgba(0, 0, 0, 0.5);
+
+    transition: height 0.5s ease; */
+}
+#sp{
+    color: white;
+    /* animation: fade 4s infinite alternate;  */
+    opacity: 1;
+    font-weight: bold;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 1; /* Comienza y termina completamente visible */
+    }
+    50% {
+        opacity: 0; /* Se desvanece a la mitad de la animación */
+    }
+}

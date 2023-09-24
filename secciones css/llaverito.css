@@ -1,0 +1,8 @@
+#llaverito{
+    /* background: black; */
+    position: absolute;
+    z-index: 88;
+    pointer-events: none;
+    width: 200px;
+    height: 200px;
+}

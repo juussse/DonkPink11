@@ -1,0 +1,119 @@
+#quienesSomos{
+    position: relative;
+    z-index: 1;
+    width: 100vw;
+    height: max-content;
+    background-color: rgba(252, 252, 252, 1);
+    display: flex;
+    flex-direction: row;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    
+    overflow: hidden;
+}
+#quienesSomos:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/logo.png'); /* Cambia la ruta a tu imagen */
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: blur(10px) opacity(0.3); /* Aplica el efecto de desenfoque */
+    z-index: -1;
+}
+
+#qSTit{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    width: 50vw;
+    color: black;
+    padding: 50px;
+    
+}
+
+#qSTit h4, h2{
+    
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+#qSTit h2{
+    font-size: 2rem;
+}
+#qSTit h4{
+    margin-left: 0px;
+    margin-bottom: 10px;
+    font-family: 'Victor Mono', monospace;
+}
+#qSTit p{
+    font-size: calc(1vw + 1.3vh);
+    text-align: justify;
+}
+#post{
+    width: 50vw;
+    height: 50vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+#post_1, #post_2{
+    position: absolute;
+    z-index: 100;
+    width: 15vw;
+    width: 15vw;
+    min-width: 250px;
+    min-height: 250px;
+    background: rgb(250, 245, 232);
+    border: 1px solid rgb(208, 206, 202);
+    box-shadow: 
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    transition: 250ms;
+}
+
+
+
+@media (min-width: 1019px) {
+    #post:hover>#post_1{
+        transform: scale(1.25) rotate(20deg) translateX(35%);
+        box-shadow: 
+        20px 20px 40px rgba(0, 0, 0, 0.3);
+    }
+    #post:hover>#post_2{
+        transform: scale(1.25) rotate(-10deg) translateX(-35%);
+        box-shadow: 
+        20px 20px 40px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@media (max-width: 430px) {
+    #quienesSomos{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #qSTit{
+        width: 80vw;
+    }
+}
+
+
+#post_1 img, #post_2 img{
+    width: 90%;
+}
+#post_1 p, #post_2 p{
+    font-size: 0.8rem;
+}

@@ -1,0 +1,10 @@
+#patrocinadores{
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+}
+#estrellas{
+    position: relative;
+    top: -14%;
+}
+

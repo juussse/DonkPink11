@@ -1,0 +1,58 @@
+#frase{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 130vh;
+    
+    pointer-events: none;
+
+    overflow: hidden;
+
+    
+    opacity: 0;
+    
+}
+
+#frase .container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    
+    text-align: center;
+    font-size: calc(3vw + 3vh);
+    
+    
+    
+}
+
+#frase .container h2{
+    background-image: linear-gradient(to bottom, #ff0ee3, #000000,#ff0ee3);
+
+    background-size: 200%;
+    background-position: center;
+    background-position-y: 0px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color:Gold;
+    -webkit-text-fill-color: transparent;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+#frase img{
+
+    /* transition: 100ms rotate; */
+    width: 24vw;
+    min-width: 170px;
+    position: absolute;
+    pointer-events: all;
+    transition: width 200ms;
+
+}

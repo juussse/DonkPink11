@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <!-- fuentes -->
+    
+    
+    <!-- font-family: 'Roboto', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- font-family: 'Open Sans', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- font-family: 'Tektur', cursive; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tektur&display=swap" rel="stylesheet">
+    
+    <!-- font-family: 'Victor Mono', monospace; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:wght@100&display=swap" rel="stylesheet">
+    
+    <!-- font-family: 'Oswald', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- font-family: 'Russo One', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    
+    <!-- fuentes -->
+    
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONK-PINK</title>
+    <!-- Aquí puedes incluir enlaces a tus hojas de estilo CSS -->
+    <link rel="stylesheet" href="carrusel.css"> 
+    <link rel="stylesheet" href="estilos.css"> 
+    <link rel="stylesheet" href="inicio.css">
+    
+    <link rel="stylesheet" href="cuerpo.css">
+    
+    <link rel="stylesheet" href="secciones css/estrellas.css">
+    <link rel="stylesheet" href="secciones css/quienesSomos.css">
+    <link rel="stylesheet" href="secciones css/niveles.css">
+    <link rel="stylesheet" href="secciones css/integrantes.css">
+    <link rel="stylesheet" href="secciones css/impacto.css">
+    <link rel="stylesheet" href="secciones css/historia.css">
+    <link rel="stylesheet" href="secciones css/competencias.css">
+    
+    <link rel="stylesheet" href="secciones css/frase.css">
+
+    <link rel="stylesheet" href="secciones css/carrusel.css">
+    <link rel="stylesheet" href="secciones css/llaverito.css">
+
+    
+    
+    
+    <script src="https://kit.fontawesome.com/4340ac13b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="cabecera transparente">
+        <!-- Contenido del encabezado de tu página -->
+        <h1>Donk-Pink</h1>
+        <button class="boton-hamburguesa">
+            <span class="spHam"></span>
+            <span class="spHam"></span>
+            <span class="spHam"></span>
+        </button>
+    </header>
+    
+    <main>
+
+        <canvas id="llaverito" width="660" height="660"></canvas>
+        
+        <div id="cortina_init">
+            <h2>LOS SUEÑOS NO SON BLANCOS O NEGROS</h2>
+            <div id="linea"></div>
+            <h2>SON ROSAS</h2>
+        </div>
+        
+        <div id="carrusel">
+            
+            
+            <div id="elementos">
+                <div id="video-background">
+                    <video autoplay loop muted>
+                        <source src="videos/BATIZ CALIDO.mp4" type="video/mp4">
+                    </video>
+                    <div class="gradient-overlay"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="portada">
+            <div class="cont">
+                <h2>DONK</h2>
+                <img src="imagenes/logo.png" alt="">
+                <h2>PINK</h2>
+            </div>
+        </div>
+        
+        <div id="misVis">
+            <div id="tituloMis">
+                <h2 id="n" class="el">NUESTRA</h2>
+                <div id="conmut" class="el">
+                    <h2 class="fC">MISIÓN</h2>
+                    <h2 class="dC">VISIÓN</h2>
+                </div>
+            </div>
+            <div id="texto">
+                <p id="textoMS"><span id="sp">|</span></p>
+            </div>
+        </div>
+        
+        
+        
+        <div id="cortina">
+        </div>
+        
+        <div id="menu">
+            <nav class="menu-lateral">
+                <ul>
+                    <h1 class="titulo_menu">Donk-Pink</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <li class="seccion">GENERAL</li>
+                    <hr>
+                    <li class="active">
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-house"></i></div>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-mug-saucer"></i></div>
+                            <span>Patrocinadores</span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="seccion">SOBRE NOSOTROS</li>
+                    <hr>
+                    <li >
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-user-pen"></i></div>
+                            <span>¿Quienes Somos?</span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-people-group"></i></div>
+                            <span>Integrantes</span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-book"></i></div>
+                            <span>Historia</span>
+                        </a>
+                    </li>
+                    <hr>
+                    <li class="seccion">OTROS</li>
+                    <hr>
+                    <li>
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-robot"></i></div>
+                            <span>Competencias</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-handshake"></i></div>
+                            <span>Niveles Patrocinio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="opcion">
+                            <div class="logo"><i class="fa-solid fa-tower-cell"></i></div>
+                            <span>Impacto</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <!-- SECCIONES DE LA PAGINA -->
+        
+        <div id="cuerpo">
+            <!-- <h2 id="Tit_alianza">ALIANZAS</h2> -->
+            <div class="carrusel-contenedor">
+                <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/aztech.webp" alt="Logo 1">
+                <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/engirlneering.webp" alt="Logo 1">
+                <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/feminiciencia.webp" alt="Logo 1">
+                <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/frejunpo.webp" alt="Logo 1">
+                <!-- <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/fundacion.png" alt="Logo 1"> -->
+                <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/girlup.webp" alt="Logo 1">
+                <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/jomin.webp" alt="Logo 1">
+                <!-- <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/jtec.webp" alt="Logo 1"> -->
+                <img class="carrusel-imagen" src="imagenes/alianzas-patrocinios/talentnet.webp" alt="Logo 1">
+                <!-- Agrega más imágenes aquí -->
+            </div>
+            <div id="patrocinadores">
+                <h2 id="tit_pat">Patrocinadores</h2>
+                <canvas id="estrellas" width="100"></canvas>
+            </div>
+            <div id="quienesSomos">
+                <div id="qSTit">
+                    <h4>DONKPINK-21837</h4>
+                    <h2>¿QUIENES SOMOS?</h2>
+                    <p>En DonkPink somos un equipo de robótica que forma parte de las actividades extracurriculares del Centro de Estudios Científicos y Tecnológicos No. 9 "Juan de Dios Bátiz" perteneciente al IPN.</p>
+                    <p>Surgimos a manera de compartir el conocimiento cientifico y tecnologico ademas de el inicio de una oportunidad para adolescentes principalmente la inclusion de mujeres al equipo de robotica. Nuestro equipo se distingue de las habilidades de cada uno de sus integrantes cada uno enriquece en la parte colaborativa del equipo.</p>
+                    <p>nuestra area de trabajo ha crecido gracias a las oportunidades que el STEAM nos ofrece (Science, Technology,Engineering, Art, Math).</p>
+                </div>
+                <div id="post">
+                    <div id="post_1">
+                        <img src="imagenes/tarjeta2.jpeg" alt="">
+                        <p>Enseñando ando</p>
+                    </div>
+                    <div id="post_2">
+                        <img src="imagenes/tarjeta1.jpeg" alt="">
+                        <p>Reforestando ando</p>
+                    </div>
+                </div>
+            </div>
+            <div id="frase">
+                <div class="container">
+                    <h2 id="textFrase">LOS SUEÑOS NO SON BLANCOS O NEGROS, SON ROSAS</h2>
+                </div>
+                <img class="img1 imgF" src="imagenes/imagenes prueba/06d3e8249d24fc99805237013cc23034ae075e9e-1920x1920.webp" alt="">
+                <img class="img2 imgF" src="imagenes/imagenes prueba/25a94646dd7356acb50fb4009490f99ffef6be5e-1920x1920.webp" alt="">
+                <img class="img3 imgF" src="imagenes/imagenes prueba/39c95193ecad6aa383d4bdd98f9453fb301217b6-400x400.webp" alt="">
+                <img class="img4 imgF" src="imagenes/imagenes prueba/8877b26c52190b5919b67a0fd83418a7bc682c85-1920x1920.webp" alt="">
+            </div>
+            <div id="espacio"></div>
+            <div id="historia">
+                <section id="his_logo" class="secHis">
+                    <div class="izq">
+                        <h3>LOGO DEL EQUIPO</h3>
+                        <P>Nuestro equipo se identifica mediante un distintivo logotipo en negro y rosa que simboliza nuestra profunda dedicación a la inclusión y la tecnología.</P>
+                        <div class="boton">SIGUENOS EN INSTAGRAM</div>
+                    </div>
+                    <div class="der">
+                        <img class="imgHist" src="imagenes/logo negro.jpg" alt="">
+                    </div>
+                </section>
+                <section id="his_equipo" class="secHis">
+                    <div class="izq">
+                        <h3>HISTORIA DE DONKPINK</h3>
+                        <p>Nuestro esquipo es representado por un logo negro y rosa este logo es conformado por el color rosado devido a la implementacion de mas chicas al quipo e inclusion.</p>
+                        <div class="boton">CONOCE MAS SOBRE DONKPINK</div>
+                    </div>
+                    <div class="der">
+                        <img class="imgHist" src="imagenes/600-480-024.jpg" alt="">
+                    </div>
+                </section>
+                <section id="his_mascota" class="secHis">
+                    <div class="izq">
+                        <h3>MASCOTA</h3>
+                        <P>Chip Pink, nuestra querida mascota vestida de mariachi, invadió nuestro club de robotica, trayendo diversión y homenaje a la cultura mexicana. Desde entonces, ha sido nuestro socio leal en innumerables competencias, compartiendo nuestros triunfos y desafíos mientras encarna nuestro compromiso y pasión por la tecnología.</P>
+                        <div class="boton">CONOCE A CHIP</div>
+                    </div>
+                    <div class="der">
+                        <img class="imgHist" src="imagenes/chipichipi.png" alt="">
+                    </div>
+                </section>
+            </div>
+
+            <div class="integrantes fc">
+                <div class="tarjeta">
+                    <!-- <div class="fondo"></div> -->
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <!-- <div class="fondo"></div> -->
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <!-- <div class="fondo"></div> -->
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <!-- <div class="fondo"></div> -->
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <!-- <div class="fondo"></div> -->
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div> 
+            </div>
+
+            <div class="integrantes">
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div> 
+            </div>
+
+
+            <div class="integrantes">
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+                <div class="tarjeta">
+                    <div class="fondo"></div>
+                    <div class="foto"  alt=""></div>
+
+                    <h2 class="nombre">Nombre</h2>
+                    <h3 class="papel">Papel</h3>
+
+                    <p class="semblanza">semblanza: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio nostrum illo quidem necessitatibus placeat numquam ducimus, ad earum aut odit fugiat consectetur dolor praesentium quaerat consequatur officiis?.</p>
+                </div>
+            </div>
+            
+            
+
+
+            
+            
+            <div id="competencias">
+            </div>
+            <div id="NivelesPat">
+            </div>
+            <div id="Impacto">
+            </div>
+        </div>
+    </main> 
+    
+    <footer>
+    </footer>
+    
+    <!-- Aquí puedes incluir enlaces a tus scripts de JavaScript -->
+    
+    <script src="canvas_draw.js"></script>
+    <script src="main.js"></script>
+    
+    <script src="secciones js/historia.js"></script>
+    <script src="secciones js/estrellas.js"></script>
+    
+    <script src="secciones js/misVis.js"></script>
+    <script src="secciones js/frase.js"></script>
+
+    <script src="secciones js/integrantes.js"></script>
+
+    <script src="secciones js/llaverito.js"></script>
+
+</body>
+</html>

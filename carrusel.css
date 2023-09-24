@@ -1,0 +1,34 @@
+#l_foto, #r_foto{
+    position: absolute;
+    /* z-index: 2; */
+    width: 5vw;
+    height: 5vw;
+
+    min-width: 30px;
+    min-height: 30px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    /* top: 50vh; */
+
+    
+
+    opacity: 0.5;
+    
+    font-size: 2rem;
+
+    border: 1px rgb(124, 124, 124) solid;
+
+    cursor: pointer;
+
+    overflow: hidden;
+    font-family: 'Victor Mono', monospace;
+}
+
+@media screen and (max-width: 480px) {
+    #l_foto, #r_foto{
+        font-size: 1rem;
+    }
+}

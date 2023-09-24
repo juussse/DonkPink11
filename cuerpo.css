@@ -1,0 +1,61 @@
+#cuerpo{
+    position: absolute;
+    top: 130vh;
+}
+
+.carrusel-contenedor{
+    width: 100vw;
+    height: 25vh;
+    
+    /* background: black; */
+    
+    display: flex;
+    flex-wrap: nowrap; /* Evita que las imágenes se envuelvan a la siguiente línea */
+    overflow-x: auto; 
+    
+    overflow: hidden;
+}
+
+
+.carrusel-contenedor img{
+    width: 8vw;
+    min-width: 100px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    flex: 0 0 auto; /* Permite que las imágenes tengan su ancho original */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción de la imagen */
+    margin-right: 10px;
+    
+    transition: width 0.3s, filter 0.3s;
+    
+    filter: grayscale(100%);
+}
+
+.carrusel-contenedor img:hover{
+    width: 13vw;
+    filter: grayscale(0%);
+}
+
+#Tit_alianza{
+    margin: 100px;
+}
+
+#patrocinadores{
+    margin-top: 30vh;
+    /* opacity: 0.8; */
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); /* Degradado vertical desde oscuro a transparente */
+    
+    /* background: black; */
+
+    box-shadow: -10px 0px 100px 100px rgba(0, 0, 0, 1); 
+}
+
+@media screen and (max-width: 480px) {
+    .carrusel-contenedor img:hover{
+        width: 8vw;   
+    }
+}
